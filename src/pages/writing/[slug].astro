@@ -1,0 +1,167 @@
+---
+import { getCollection, render } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing');
+
+  return posts.map((post) => ({
+    params: {
+      slug: post.id,
+    },
+    props: {
+      post,
+    },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width"
+  />
+
+  <title>{post.data.title} — DEVANK</title>
+
+  <meta
+    name="description"
+    content={post.data.description}
+  />
+</head>
+
+<body class="inner">
+
+  <!-- NAVIGATION -->
+
+  <header class="nav">
+
+    <a
+      class="brand"
+      href="/"
+    >
+      DEVANK SINGH
+    </a>
+
+    <nav>
+
+      <a href="/">
+        01. HOME
+      </a>
+
+      <a href="/about">
+        02. ABOUT
+      </a>
+
+      <a href="/projects">
+        03. PROJECTS
+      </a>
+
+      <a
+        class="active"
+        href="/writing"
+      >
+        04. WRITING
+      </a>
+
+      <a href="/now">
+        05. NOW
+      </a>
+
+    </nav>
+
+    <div class="social">
+
+      <a
+        href="https://github.com/devanksinghchaudhary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GH
+      </a>
+
+      <a
+        href="https://x.com/devank0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        in
+      </a>
+
+      <a href="mailto:devanksinghchaudhhary@gmail.com">
+        @
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- ARTICLE -->
+
+  <main class="content">
+
+    <a
+      href="/writing"
+      class="back-link"
+    >
+      ← ALL WRITING
+    </a>
+
+
+    <div class="article-meta">
+
+      <span>
+        {
+          post.data.date.toLocaleDateString(
+            'en-US',
+            {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            }
+          )
+        }
+      </span>
+
+      {
+        post.data.tags?.length > 0 && (
+
+          <span>
+            {post.data.tags.join(' · ')}
+          </span>
+
+        )
+      }
+
+    </div>
+
+
+    <h1>
+      {post.data.title}
+    </h1>
+
+
+    <p class="lead">
+      {post.data.description}
+    </p>
+
+
+    <article class="markdown">
+
+      <Content />
+
+    </article>
+
+  </main>
+
+</body>
+
+</html>

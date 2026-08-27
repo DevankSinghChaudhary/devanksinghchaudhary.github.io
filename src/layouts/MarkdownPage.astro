@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+const { title, description } = Astro.props;
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <title>{title} — DEVANK</title>
+</head>
+<body class="inner">
+<header class="nav">
+  <a class="brand" href="/">DEVANK SINGH</a>
+  <nav>
+    <a href="/">01. HOME</a>
+    <a href="/about">02. ABOUT</a>
+    <a href="/projects">03. PROJECTS</a>
+    <a href="/writing">04. WRITING</a>
+    <a href="/now">05. NOW</a>
+  </nav>
+</header>
+<main class="content markdown">
+  <p class="section-label">TRANSMISSION</p>
+  <slot />
+</main>
+</body>
+</html>

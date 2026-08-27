@@ -1,0 +1,435 @@
+---
+import '../styles/global.css';
+
+const cards = [
+  {
+    number: '01',
+    title: 'ABOUT',
+    text: 'Who I am, what drives me, and the mission ahead.',
+    href: '/about'
+  },
+  {
+    number: '02',
+    title: 'PROJECTS',
+    text: 'Things I build to solve real problems.',
+    href: '/projects'
+  },
+  {
+    number: '03',
+    title: 'WRITING',
+    text: 'Thoughts on technology, space, systems and life.',
+    href: '/writing'
+  },
+  {
+    number: '04',
+    title: 'NOW',
+    text: "What I'm currently working on and exploring.",
+    href: '/now'
+  }
+];
+---
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="Devank — builder, developer, explorer."
+    />
+
+    <meta
+      name="theme-color"
+      content="#030202"
+    />
+
+    <title>
+      DEVANK — Builder · Developer · Explorer
+    </title>
+
+  </head>
+
+
+  <body>
+
+    <!-- =====================================================
+         LIVE BLACK HOLE BACKGROUND
+         ===================================================== -->
+
+    <div
+      class="space-background"
+      aria-hidden="true"
+    >
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+
+        <source
+          src="/videos/blackhole.mp4"
+          type="video/mp4"
+        />
+
+      </video>
+
+
+      <div class="space-overlay"></div>
+
+      <div class="orange-atmosphere"></div>
+
+      <div class="blue-atmosphere"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         STAR FIELD
+         ===================================================== -->
+
+    <div
+      class="stars"
+      aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="nav">
+
+      <a
+        class="brand"
+        href="/"
+        aria-label="Devank home"
+      >
+        DEVANK SINGH
+      </a>
+
+
+      <nav aria-label="Main navigation">
+
+        <a
+          class="active"
+          href="/"
+        >
+          01. HOME
+        </a>
+
+        <a href="/about">
+          02. ABOUT
+        </a>
+
+        <a href="/projects">
+          03. PROJECTS
+        </a>
+
+        <a href="/writing">
+          04. WRITING
+        </a>
+
+        <a href="/now">
+          05. NOW
+        </a>
+
+      </nav>
+
+
+      <div class="social">
+
+        <a
+          href="https://github.com/devanksinghchaudhary"
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GH
+        </a>
+
+
+        <a
+          href="https://x.com/devank0"
+          aria-label="X"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          in
+        </a>
+
+
+        <a
+          href="mailto:devanksinghchaudhhary@gmail.com"
+          aria-label="Email"
+        >
+          @
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main>
+
+
+      <!-- ===================================================
+           HERO
+           =================================================== -->
+
+      <section class="hero">
+
+
+        <!-- LEFT INDICATOR -->
+
+        <div class="side">
+
+          <span>
+            01
+          </span>
+
+          <i></i>
+
+          <small>
+            SCROLL TO EXPLORE
+          </small>
+
+        </div>
+
+
+        <!-- RIGHT INFORMATION -->
+
+        <div class="coordinates">
+
+          <span>
+            LOCATION
+          </span>
+
+          <b>
+            Gargantua
+          </b>
+
+
+          <hr />
+
+
+          <span>
+            COORDINATES
+          </span>
+
+          <b>
+            38.7° N, 104.8° W
+          </b>
+
+
+          <hr />
+
+
+          <span>
+            LOCAL TIME
+          </span>
+
+          <b id="hero-time">
+            --:--:--
+          </b>
+
+        </div>
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-copy">
+
+          <p class="eyebrow">
+
+            BUILDER
+
+            <span>·</span>
+
+            DEVELOPER
+
+            <span>·</span>
+
+            EXPLORER
+
+          </p>
+
+
+          <h1>
+            DEVANK
+          </h1>
+
+
+          <p class="tagline">
+
+            Building systems. Exploring ideas.<br />
+
+            Working toward a future among the stars.
+
+          </p>
+
+
+          <a
+            class="cta"
+            href="#explore"
+          >
+
+            <span class="cta-text">
+              EXPLORE THE UNIVERSE
+            </span>
+
+            <span class="cta-arrow">
+              ↓
+            </span>
+
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           EXPLORE
+           =================================================== -->
+
+      <section
+        id="explore"
+        class="explore"
+      >
+
+
+        <div class="section-label">
+          TRANSMISSION / 001
+        </div>
+
+
+        <!-- =================================================
+             CARDS
+             ================================================= -->
+
+        <div class="cards">
+
+          {
+            cards.map((card) => (
+
+              <a
+                class="card"
+                href={card.href}
+              >
+
+                <span class="number">
+                  {card.number}
+                </span>
+
+
+                <div
+                  class="orbit"
+                  aria-hidden="true"
+                ></div>
+
+
+                <h2>
+                  {card.title}
+                </h2>
+
+
+                <div class="line"></div>
+
+
+                <p>
+                  {card.text}
+                </p>
+
+
+                <span class="explore-link">
+
+                  EXPLORE
+
+                  <span class="arrow">
+                    →
+                  </span>
+
+                </span>
+
+              </a>
+
+            ))
+          }
+
+        </div>
+
+
+        <!-- =================================================
+             QUOTE
+             ================================================= -->
+
+        <blockquote>
+
+          <span class="quote-mark">
+            “
+          </span>
+
+          <span class="quote-text">
+            Mankind was never meant to die on Earth
+          </span>
+
+          <cite>
+            — Cooper
+          </cite>
+
+        </blockquote>
+
+      </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         HERO CLOCK
+         ===================================================== -->
+
+    <script>
+
+      const updateHeroTime = () => {
+
+        const el =
+          document.querySelector('#hero-time');
+
+        if (!el) return;
+
+        el.textContent =
+          new Date().toLocaleTimeString([], {
+            hour12: false
+          });
+
+      };
+
+
+      updateHeroTime();
+
+
+      setInterval(
+        updateHeroTime,
+        1000
+      );
+
+    </script>
+
+  </body>
+
+</html>

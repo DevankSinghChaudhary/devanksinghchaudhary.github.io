@@ -1,0 +1,220 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+const posts = (
+  await getCollection('writing')
+).sort(
+  (a, b) =>
+    b.data.date.valueOf() -
+    a.data.date.valueOf()
+);
+---
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width"
+  />
+
+  <title>Writing — DEVANK</title>
+
+  <meta
+    name="description"
+    content="Writing by Devank."
+  />
+
+</head>
+
+
+<body class="inner">
+
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
+  <header class="nav">
+
+    <a
+      class="brand"
+      href="/"
+    >
+      DEVANK SINGH
+    </a>
+
+
+    <nav>
+
+      <a href="/">
+        01. HOME
+      </a>
+
+      <a href="/about">
+        02. ABOUT
+      </a>
+
+      <a href="/projects">
+        03. PROJECTS
+      </a>
+
+      <a
+        class="active"
+        href="/writing"
+      >
+        04. WRITING
+      </a>
+
+      <a href="/now">
+        05. NOW
+      </a>
+
+    </nav>
+
+
+    <div class="social">
+
+      <a
+        href="https://github.com/devanksinghchaudhary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GH
+      </a>
+
+      <a
+        href="https://x.com/devank0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        in
+      </a>
+
+      <a
+        href="mailto:devanksinghchaudhhary@gmail.com"
+      >
+        @
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       CONTENT
+       ===================================================== -->
+
+  <main class="content">
+
+    <p class="section-label">
+      TRANSMISSION / 004
+    </p>
+
+
+    <h1>
+      Writing
+    </h1>
+
+
+    <p class="lead">
+      Notes, ideas and observations.
+    </p>
+
+
+    <!-- ===================================================
+         POSTS
+         =================================================== -->
+
+    {
+      posts.length > 0 ? (
+
+        <div class="writing-list">
+
+          {
+            posts.map((post) => (
+
+              <a
+                class="writing-post"
+                href={`/writing/${post.id}/`}
+              >
+
+                <div class="writing-post-meta">
+
+                  <span>
+                    {
+                      post.data.date.toLocaleDateString(
+                        'en-US',
+                        {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric'
+                        }
+                      )
+                    }
+                  </span>
+
+
+                  {
+                    post.data.tags?.length > 0 && (
+
+                      <span>
+                        {post.data.tags.join(' · ')}
+                      </span>
+
+                    )
+                  }
+
+                </div>
+
+
+                <h2>
+                  {post.data.title}
+                </h2>
+
+
+                <p>
+                  {post.data.description}
+                </p>
+
+
+                <span class="writing-read">
+                  READ →
+                </span>
+
+              </a>
+
+            ))
+          }
+
+        </div>
+
+      ) : (
+
+        <div class="empty">
+
+          NO TRANSMISSIONS YET.
+
+          <br />
+
+          <small>
+            Add Markdown posts to
+            <code>src/content/</code>
+            when you're ready.
+          </small>
+
+        </div>
+
+      )
+    }
+
+  </main>
+
+</body>
+
+</html>
