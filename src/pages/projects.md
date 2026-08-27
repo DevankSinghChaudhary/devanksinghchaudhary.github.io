@@ -10,13 +10,15 @@ description: Things I build to solve real problems.
 
 An AI-native documentary video production pipeline designed to turn research and narration into structured, visually planned videos.
 
-**Status:** Building
+**Status:** Building  
+[Github](https://github.com/devanksinghchaudhary/vpipeline)
 
 ## NoManLand
 
 A long-term vision around space research, observatories, education and exploration.
 
-**Status:** Long-term mission
+**Status:** Long-term mission  
+[NoManLand](/writing/nomanland/)
 
 ## More
 
