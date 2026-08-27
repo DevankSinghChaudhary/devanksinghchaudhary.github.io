@@ -6,6 +6,9 @@ description: Who I am, what drives me, and the mission ahead.
 
 # About
 
+![LOGO](.public/favicon.svg)
+> No Professional photograph, so this :)
+
 I'm **Devank**, a developer and builder interested in technology, artificial intelligence, science and space.
 
 I like building systems rather than just learning about them. This website is a small record of the things I'm building, thinking about, and exploring.
