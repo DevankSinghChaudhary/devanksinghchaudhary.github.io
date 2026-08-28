@@ -11,7 +11,8 @@ description: Things I build to solve real problems.
 An AI-native documentary video production pipeline designed to turn research and narration into structured, visually planned videos.
 
 **Status:** Building  
-[Github](https://github.com/devanksinghchaudhary/vpipeline)
+[Github](https://github.com/devanksinghchaudhary/vpipeline)  
+[Read](/vpipeline/)
 
 ## NoManLand
 

@@ -1438,6 +1438,46 @@ a {
   letter-spacing: 0.08em;
 }
 
+.credit {
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.image-container {
+  cursor: zoom-in;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.01);
+}
+
+.image-container.open {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: zoom-out;
+}
+
+.image-container.open img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fit;
+}
 
 /* =========================================================
    ARTICLE PAGE
