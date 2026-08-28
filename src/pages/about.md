@@ -7,7 +7,7 @@ description: Who I am, what drives me, and the mission ahead.
 # About
 
 <div class="svg-left">
-  <img src="favicon.svg" alt="logo of devank singh haudhary">
+  <img src="/about/favicon.svg" alt="logo of devank singh haudhary">
 </div>
 
 <div class="special-note">
@@ -45,5 +45,5 @@ The long-term idea is simple:
 ---
 **Working towards becoming polymath I would say.**
 <div class="meaning">
-  <img src="polymath.png" alt="Meaning of polymath">
+  <img src="/about/polymath.png" alt="Meaning of polymath">
 </div>
