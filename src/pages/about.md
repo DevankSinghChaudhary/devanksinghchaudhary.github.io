@@ -26,9 +26,8 @@ I like building systems rather than just learning about them. This website is a 
 
 I'm interested in the intersection of software, AI, science and long-term exploration.
 
-The long-term idea is simple:
-
-> Build useful things
+The long-term idea is simple:  
+`Build useful things`
 
 ## Interests
 
@@ -49,7 +48,7 @@ The long-term idea is simple:
 - Travelling
 - Mountaineering  
   
-About other three [here](writing/vision/)
+About other three [here](/writing/vision/)
 
 ---
 **Working towards becoming polymath I would say.**
