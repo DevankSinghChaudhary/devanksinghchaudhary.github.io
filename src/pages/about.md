@@ -42,6 +42,15 @@ The long-term idea is simple:
 - Marathons
 - Football
 
+### Major Interests
+
+- Space (You will learn about this interest in [NoManLand](/writing/nomanland/))
+- Football
+- Travelling
+- Mountaineering  
+  
+About other three [here](writing/vision/)
+
 ---
 **Working towards becoming polymath I would say.**
 <div class="meaning">
