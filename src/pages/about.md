@@ -55,3 +55,6 @@ About other three [here](/writing/vision/)
 <div class="meaning">
   <img src="/about/polymath.png" alt="Meaning of polymath">
 </div>
+
+---
+focusing on [VPipeline](/vpipeline/). More content later
