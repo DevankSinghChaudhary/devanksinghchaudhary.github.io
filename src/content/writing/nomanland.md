@@ -44,6 +44,7 @@ I want this company to be non-bloated, clean, transparent.
 Now I'm going to talk about the most interesting part of this company or my vision with this company.  
   
 The main purpose of this company is to make humanity interstellar species, a life-form capable of living and travelling through interstellar space.  
+If not interstellar then multi-planetary.  
 It may seem impossible to do in one lifetime of mine, its true it may be inevitable. Why may? Because who knows in near future some kind of technology make it possible, but for now its impossible.  
 This is why creating this company is best part for me. This company will give me infinite purpose of life. I will never sit idle thinking "Whats next?".  
   
