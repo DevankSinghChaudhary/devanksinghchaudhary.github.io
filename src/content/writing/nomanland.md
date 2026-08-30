@@ -1,7 +1,7 @@
 ---
 title: "NoManLand"
 description: "Ultimate Goal of Life"
-date: 2026-08-28
+date: 2026-08-29
 tags:
   - vision
 ---
@@ -56,11 +56,8 @@ Something like this:
 <div class="meaning">
   <img src="/nomanland/space.png" alt="Sapce Structure">
 </div>
-<p class="credit">
-  <a href="https://www.youtube.com/@melodysheep">Credit</a>
-</p>
-  
-  
+   
+
 - Adding corridors to space structures.  
 <div class="meaning">
   <img src="/nomanland/corridor.png" alt="Space corridor to space infrastructure">

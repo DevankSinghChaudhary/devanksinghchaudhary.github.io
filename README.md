@@ -1,25 +1,38 @@
-> [!NOTE]
-> AI GENERATED
+# Devank Singh Chaudhary
 
- 
-# devanksingh.github.io — Minimal GitHub Pages site
+My personal corner of the internet.
 
-This repository contains a minimal static site scaffold for GitHub Pages.
+**[devanksinghchaudhary.github.io](https://devanksinghchaudhary.github.io)**
 
-- Site source: `public/` — see [public/index.html](public/index.html)
-- Styles: [public/assets/style.css](public/assets/style.css)
-- GitHub Actions workflow: [.github/workflows/gh-pages.yml](.github/workflows/gh-pages.yml)
+---
 
-How to use
+This website is where I keep things that are a little difficult to put into a CV.
 
-1. Rename the repository to `devanksinghchaudhary.github.io` if you want a user site directly served at `https://devanksinghchaudhary.github.io`.
-2. Push the repository to GitHub (e.g., `git remote add origin ...` and `git push -u origin main`).
-3. The workflow will publish the contents of `public/` to the `gh-pages` branch automatically on push to `main`/`master`.
+Projects I'm building.
+Things I'm learning.
+Ideas I'm thinking about.
+Things I find interesting.
+And occasionally, just things I want to write down.
 
-If you prefer GitHub Pages to serve from the `main` branch (root or `/docs`), adjust the workflow or GitHub repository settings accordingly.
+It's not meant to be a polished representation of me.
 
-Repository settings note:
+It's a record of where I am.
 
-- Ensure Actions have **Read and write permissions**: Settings → Actions → General → *Workflow permissions* → select **Read and write permissions**, and enable **Allow GitHub Actions to create and approve pull requests** if applicable. This lets the `GITHUB_TOKEN` push the `gh-pages` branch.
+---
 
+### What's here?
+
+**Projects** — Things I'm building and experimenting with.
+
+**Writing** — An archive of thoughts, perspectives, experiments and whatever else feels worth keeping.
+
+**Now** — What I'm currently working on and thinking about.
+
+**About** — A little more about me and where I'm heading.
+
+---
+
+> "The website will probably change as I do."
+
+— Devank
 

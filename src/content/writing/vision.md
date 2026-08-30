@@ -1,7 +1,7 @@
 ---
 title: "Vision"
 description: "Milestones in life"
-date: 2026-08-27
+date: 2026-08-28
 tags:
   - What I want to do in life except financial career
 ---
@@ -13,7 +13,7 @@ First, we will talk about travelling.
 
 # Travelling
 
-I might be a fan of travelling but I haven't travelled much.  
+I am a fan of travelling but I haven't travelled much.  
 I am keeping it short for now.  
 There are tons of places I want to go. Some are normal while others are not so normal.  
 In that not so normal place, there is a place called ANTARTICA aka End of the World.  
