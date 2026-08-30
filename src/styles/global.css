@@ -1476,7 +1476,7 @@ html {
 .image-container.open img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: fit;
+  object-fit: contain;
 }
 
 /* =========================================================
@@ -2445,8 +2445,13 @@ html {
   color: #D4FADC !important;
 }
 
+.meaning {
+  max-width: 100%;
+}
+
 .meaning img {
   width: 770px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
